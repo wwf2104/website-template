@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+<title> Title 3 </title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+  <script>
+
+  </script>
+
+<header>
+    <ul id="navbar">
+        <li>
+        <img class="nav-btn" id="logo" src="static/logo.jpg" alt="logo" onclick="location='home.html'">
+      </li>
+      
+      <li class="nav-btn">
+        <a href="about.html"> About </a>
+      </li>
+      <li class="nav-btn">
+        <a href="title1.html"> Title1 </a>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </li>
+        <li class="nav-btn">
+        <a href="title2.html"> Title2 </a>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </li>
+        <li class="nav-btn active">
+        <a href="title3.html"> Title3 </a>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </li>
+        <li class="nav-btn">
+        <a href="contact us.html"> Contact Us </a>
+        <div class="dropdown">
+          <a href="FAQ.html"> FAQ </a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+	<body id="fixed-bg-city">
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+          if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+              document.getElementById("topbtn").style.display = "block";}
+          else {
+              document.getElementById("topbtn").style.display = "none";}
+      }
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <div class="bg-rgba-240-9">
+
+    </div>
+
+    <button onclick="topFunction()" id="topbtn"> <i class="material-icons">navigation</i> </button>
+    
+	</body>
+
+  <footer>
+    <div id="quicklinks">
+      <a href="about.html"> -About Us- </a>
+      <a href="#"> -Terms of Use- </a>
+      <a href="#"> -Privacy Policy- </a>
+      <a href="contact us.html"> -Contact Us- </a>
+    </div>
+    <div id="social-media">
+      <a href="https://www.facebook.com"><img src="static/facebook.png" alt="facebook"></a>
+      <a href="https://www.linkedin.com/"><img src="static/linkedin.png" alt="linkedin"></a>
+      <a href="https://twitter.com/"><img src="static/twitter.png" alt="twitter"></a>
+      <a href="https://www.instagram.com/"><img src="static/instagram.png" alt="instagram"></a>
+    </div>
+  </footer>
+
+</html>

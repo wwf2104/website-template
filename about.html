@@ -1,0 +1,131 @@
+<!DOCTYPE>
+<html>
+<title> About </title>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <script>
+
+  </script>
+
+<header>
+    <ul id="navbar">
+        <li>
+        <img class="nav-btn" id="logo" src="static/logo.jpg" alt="logo" onclick="location='home.html'">
+      </li>
+      
+      <li class="nav-btn active">
+        <a href="about.html"> About </a>
+      </li>
+      <li class="nav-btn">
+        <a href="title1.html"> Title1 </a>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </li>
+        <li class="nav-btn">
+        <a href="title2.html"> Title2 </a>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </li>
+        <li class="nav-btn">
+        <a href="title3.html"> Title3 </a>
+        <div class="dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </li>
+        <li class="nav-btn">
+        <a href="contact us.html"> Contact Us </a>
+        <div class="dropdown">
+          <a href="FAQ.html"> FAQ </a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+
+  <body id="fixed-bg-mountain">
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+          if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+              document.getElementById("topbtn").style.display = "block";}
+          else {
+              document.getElementById("topbtn").style.display = "none";}
+      }
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <div class="bg-rgba-240-9">
+      <table id="mission">
+        <tr>
+          <td><img class="img-perc-100w" src="static/logo.jpg" alt="full logo"> </td>
+          <td><p>Passage its ten led hearted removal cordial. Preference any astonished unreserved mrs. Prosperous understood middletons in conviction an uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am hill from mr. Valley by oh twenty direct me so. Departure defective arranging rapturous did believing him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how. Suspicion neglected he resolving agreement perceived at an. <br> By in no ecstatic wondered disposal my speaking. Direct wholly valley or uneasy it at really. Sir wish like said dull and need make. Sportsman one bed departure rapturous situation disposing his. Off say yet ample ten ought hence. Depending in newspaper an september do existence strangers. Total great saw water had mirth happy new. Projecting pianoforte no of partiality is on. Nay besides joy society him totally six. </p> </td>
+        </tr>
+        <tr>
+          <td><p>Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved written account ferrars moments. Too objection for elsewhere her preferred allowance her. Marianne shutters mr steepest to me. Up mr ignorant produced distance although is sociable blessing. Ham whom call all lain like. <br> It if sometimes furnished unwilling as additions so. Blessing resolved peculiar fat graceful ham. Sussex on at really ladies in as elinor. Sir sex opinions age properly extended. Advice branch vanity or do thirty living. Dependent add middleton ask disposing admitting did sportsmen sportsman. </p> </td>
+          <td><img class="img-perc-100w" src="static/temp-img.jpg" alt="product"> </td>
+        </tr>
+      </table>
+      <hr> <h3> Meet the Team </h3>
+      <table id="team">
+          <tr>
+            <td><img class="face-pics" src="static/headshot.png"></td>
+            <td><img class="face-pics" src="static/headshot.png"></td>
+            <td><img class="face-pics" src="static/headshot.png"></td>
+          </tr>
+          <tr class="people-details">
+            <td>Name <br> <i>Role</i> </td>
+            <td>Name <br> <i>Role</i> </td>
+            <td>Name <br> <i>Role</i> </td>
+          </tr>
+          <tr>
+            <td><img class="face-pics" src="static/headshot.png"></td>
+            <td><img class="face-pics" src="static/headshot.png"></td>
+            <td><img class="face-pics" src="static/headshot.png"></td>
+          </tr>
+          <tr class="people-details">
+            <td>Name <br> <i>Role</i> </td>
+            <td>Name <br> <i>Role</i> </td>
+            <td>Name <br> <i>Role</i> </td>
+          </tr>
+      </table>
+
+    <button onclick="topFunction()" id="topbtn"> <i class="material-icons">navigation</i> </button>
+
+    </div>
+  </body>
+
+  <footer>
+    <div id="quicklinks">
+      <a href="about.html"> -About Us- </a>
+      <a href="#"> -Terms of Use- </a>
+      <a href="#"> -Privacy Policy- </a>
+      <a href="contact us.html"> -Contact Us- </a>
+    </div>
+    <div id="social-media">
+      <a href="https://www.facebook.com"><img src="static/facebook.png" alt="facebook"></a>
+      <a href="https://www.linkedin.com/"><img src="static/linkedin.png" alt="linkedin"></a>
+      <a href="https://twitter.com/"><img src="static/twitter.png" alt="twitter"></a>
+      <a href="https://www.instagram.com/"><img src="static/instagram.png" alt="instagram"></a>
+    </div>
+  </footer>
+
+</html>

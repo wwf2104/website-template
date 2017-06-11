@@ -1,0 +1,135 @@
+<!DOCTYPE>
+<html>
+<title> Test Home </title>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+	<script>
+	function close_popup() {
+		document.getElementById("welcome-pop-up").style.display="none";}
+
+	var imgs = document.getElementsByClassName("slide-pic");
+	var tracks = document.getElementsByClassName("track");
+	function swap_img(dir) {
+		for (i=0; i < imgs.length; i++) {
+			if (imgs[i].style.display == "block") {
+				imgs[i].style.display = "none";
+				tracks[i].className = "track";
+				if (dir == "back") {
+					num = i-1;
+					if (num < 0) {num = imgs.length -1;}
+				}
+				else if (dir == "forward") {
+					num = i+1;
+					if (num == imgs.length) {num = 0;}
+				}
+				else {num = dir;}
+				imgs[num].style.display = "block";
+				tracks[num].className +=" active";
+				break;
+			}
+		}
+	}
+	</script>
+
+	<header>
+		<ul id="navbar">
+		  	<li>
+		  	<img class="nav-btn active" id="logo" src="static/logo.jpg" alt="logo" onclick="location='home.html'">
+			</li>
+		  
+			<li class="nav-btn">
+		  	<a href="about.html"> About </a>
+			</li>
+			<li class="nav-btn">
+		  	<a href="title1.html"> Title1 </a>
+		    <div class="dropdown">
+		      <a href="#">Link 1</a>
+		      <a href="#">Link 2</a>
+		      <a href="#">Link 3</a>
+		      <a href="#">Link 4</a>
+		    </div>
+			</li>
+		    <li class="nav-btn">
+		  	<a href="title2.html"> Title2 </a>
+		    <div class="dropdown">
+		      <a href="#">Link 1</a>
+		      <a href="#">Link 2</a>
+		      <a href="#">Link 3</a>
+		      <a href="#">Link 4</a>
+		    </div>
+			</li>
+		    <li class="nav-btn">
+		  	<a href="title3.html"> Title3 </a>
+		    <div class="dropdown">
+		      <a href="#">Link 1</a>
+		      <a href="#">Link 2</a>
+		      <a href="#">Link 3</a>
+		      <a href="#">Link 4</a>
+		    </div>
+		 	</li>
+		    <li class="nav-btn">
+		  	<a href="contact us.html"> Contact Us </a>
+		    <div class="dropdown">
+		      <a href="FAQ.html"> FAQ </a>
+		    </div>
+			</li>
+		</ul>
+	</header>
+
+	<body>
+
+	<div id="welcome-pop-up" onclick="close_popup()">
+		<div id="welcome-content">
+			Welcome to this webpage - Click anywhere to close
+		</div>
+	</div>
+
+	<div class="navcontent active" id="homepage">
+		<div id="slideshow">
+			<div class="slideshow-nav" id="back" onclick="swap_img(this.id)">
+				<p class="slideshow-nav-arrow"> < </p>
+			</div>
+
+			<img class="slide-pic" src="http://content.paulreiffer.com//wp-content/gallery/cityscapes/City-By-The-Bay-San-Francisco-California-Paul-Reiffer-Professional-Landscape-Photographer-View-Photography.jpg" alt="pic1" align="center" style="display: block;">
+
+			<img class="slide-pic" src="http://wallpaper-gallery.net/images/big-scenery-wallpaper/big-scenery-wallpaper-19.jpg" alt="pic2" align="center">
+
+			<img class="slide-pic" src="http://wallpaper-gallery.net/images/wallpaper-large/wallpaper-large-16.jpg" alt="pic3" align="center">
+
+			<div class="slideshow-nav" id="forward" onclick="swap_img(this.id)">
+				<p class="slideshow-nav-arrow"> > </p>
+			</div>
+
+			<div id="slide-tracker">
+				<div class="track active" onclick="swap_img(0)">
+					<ul></ul>
+				</div> &nbsp;
+				<div class="track" onclick="swap_img(1)">
+					<ul></ul>
+				</div> &nbsp;
+				<div class="track" onclick="swap_img(2)">
+					<ul></ul>
+				</div>				
+			</div>
+
+		</div>
+	</div>
+
+	</body>
+    <footer>
+    	<div id="quicklinks">
+      		<a href="about.html"> -About Us- </a>
+      		<a href="#"> -Terms of Use- </a>
+      		<a href="#"> -Privacy Policy- </a>
+      		<a href="contact us.html"> -Contact Us- </a>
+      	</div>
+	    <div id="social-media">
+	      <a href="https://www.facebook.com"><img src="static/facebook.png" alt="facebook"></a>
+	      <a href="https://www.linkedin.com/"><img src="static/linkedin.png" alt="linkedin"></a>
+	      <a href="https://twitter.com/"><img src="static/twitter.png" alt="twitter"></a>
+	      <a href="https://www.instagram.com/"><img src="static/instagram.png" alt="instagram"></a>
+	    </div>
+    </footer>
+</html>
